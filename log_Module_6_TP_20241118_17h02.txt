@@ -1,0 +1,17 @@
+log_Module_6_TP_20241118_17h02.txt 
+Mon Nov 18 17:02:23 2024 
+Parameters
+ --- Table : script/Table_Annotations.txt
+ --- Dir : /Users/valentingoupille/Library/Mobile Documents/com~apple~CloudDocs/University/Master_Bioinfo/GNF/Sibut/TP_RNAseq
+ --- Pvalue : 0.01
+ --- FC : 2
+ --- Analysis Type : All
+ --- Control condition : DN
+ --- Pre-filtering : keep rows with at least  10  reads total
+ --- HTS Filtering : TRUE
+ --- Manual Filtering - Number of min counts : 
+ --- Paired analysis : FALSE
+ --- Multiple Test Correction : bonferroni
+ --- Record even no filtered DESeq2 results : FALSE
+ Unpaired analysis
+ Creation of the counts table

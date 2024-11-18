@@ -13,7 +13,6 @@
 ####################################################################
 
 
-
 # --- r�pertoire de travail
 #setwd("d:/home/drossill/bureau/ENSEIGNEMENT/2018 Formation R/MODULE 6/Module_6_TP/5_DESeq2")
 dir <- getwd()
@@ -37,8 +36,11 @@ source("script/DESeq2_FromSampleFiles_v1.16_openxlsx_v1.R")
 ###### cas : toutes les comparaisons possibles
 # --- setting parameters - All
 
-table="script/Table_Annotations.txt"
-dir <- getwd()
+table="script/Table_Annotations.csv"
+
+#dir <- getwd()
+dir  <- "/Users/valentingoupille/Library/Mobile Documents/com~apple~CloudDocs/University/Master_Bioinfo/GNF/Sibut/TP_RNAseq/data"
+
 pval <- 0.01                # seuil de filtrage sur p (si adjP actif alors p=adjp)
 FC <- 2                     # seuil de filtrage sur FC (FC lineaire et non logFC)
 analysis = "All"
@@ -55,6 +57,8 @@ log <- paste("log_Module_6_TP_", format(Sys.time(), '%Y%m%d_%Hh%M'), ".txt", sep
 sink(log, type="output")
 cat(log, "\n")
 cat(date(), "\n")
+
+
 
 DESeq2_FromSampleFiles(table, dir, pval, FC, analysis=analysis,condCtrl=condCtrl, 
                        PreFilt=PreFilt, Filt=Filt, NbCountMin=NbCountMin, 

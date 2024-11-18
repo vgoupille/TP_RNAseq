@@ -231,7 +231,7 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   library(lattice)
 
   cat("Parameters")
-  cat(paste("\n --- Table :", table, sep=" "))
+  cat(paste("\n --- Table :", table, sep=""))
   cat(paste("\n --- Dir :", dir, sep=" "))
   cat(paste("\n --- Pvalue :", pval, sep=" "))
   cat(paste("\n --- FC :", FC, sep=" "))
@@ -259,7 +259,7 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   
   
   # ---- import conditions table
-  Exp = read.csv(table, sep = "\t", header=T) # Conditions table
+  Exp = read.csv(table, sep = " ", header=T) # Conditions table
   if (paired==F)
     {
       d = formula(paste("~",colnames(Exp)[3]))
@@ -268,6 +268,10 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
       d = formula(paste("~", colnames(Exp)[3], "+", colnames(Exp)[4]))
       cat("\n Paired analysis")
     }
+  
+
+
+
   
   pdf(file=paste("Graph_report_",colnames(Exp)[3],".pdf", sep=""), width = 11.69, height = 8.27) # creates a graph report pdf file
 
@@ -278,10 +282,10 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   # --- pre-filtering
   if (!is.null(PreFilt))
   {
-    cat("\n Pr�-filtrage : Nombre de lignes initial : ", length(rowSums(counts(dds))))
+    cat("\n Pre-filtrage : Nombre de lignes initial : ", length(rowSums(counts(dds))))
     keepPreFilt <- rowSums(counts(dds)) >= PreFilt
     dds <- dds[keepPreFilt, ]
-    cat("\n Pr�-filtrage : Nombre de lignes conserv�es : ", length(which(keepPreFilt==TRUE)))
+    cat("\n Pre-filtrage : Nombre de lignes conservees : ", length(which(keepPreFilt==TRUE)))
       
   }
   
