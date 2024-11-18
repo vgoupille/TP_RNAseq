@@ -1,0 +1,13 @@
+Sample  File  Condition
+T05  T05.txt  DN
+T06  T06.txt  DN
+T07  T07.txt  DN
+T08  T08.txt  DN
+T09  T09.txt  FDC
+T10  T10.txt  FDC
+T11  T11.txt  FDC
+T12  T12.txt  FDC
+T17  T17.txt  FRC49a
+T18  T18.txt  FRC49a
+T19  T19.txt  FRC49a
+T20  T20.txt  FRC49a

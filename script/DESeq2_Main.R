@@ -37,7 +37,7 @@ source("script/DESeq2_FromSampleFiles_v1.16_openxlsx_v1.R")
 ###### cas : toutes les comparaisons possibles
 # --- setting parameters - All
 
-table="Module_6_TP_table.txt"
+table="script/Table_Annotations.txt"
 dir <- getwd()
 pval <- 0.01                # seuil de filtrage sur p (si adjP actif alors p=adjp)
 FC <- 2                     # seuil de filtrage sur FC (FC lineaire et non logFC)
