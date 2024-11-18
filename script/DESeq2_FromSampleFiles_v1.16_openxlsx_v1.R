@@ -260,6 +260,9 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   
   # ---- import conditions table
   Exp = read.csv(table, sep = " ", header=T) # Conditions table
+  
+
+
   if (paired==F)
     {
       d = formula(paste("~",colnames(Exp)[3]))
@@ -269,15 +272,19 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
       cat("\n Paired analysis")
     }
   
+  
 
 
 
   
   pdf(file=paste("Graph_report_",colnames(Exp)[3],".pdf", sep=""), width = 11.69, height = 8.27) # creates a graph report pdf file
 
+
   # ---- creation of the counts table
   cat("\n Creation of the counts table")
   dds = DESeqDataSetFromHTSeqCount(Exp, directory=dir, design=d)
+
+
 
   # --- pre-filtering
   if (!is.null(PreFilt))

@@ -1,0 +1,29 @@
+log_Module_6_TP_20241118_20h02.txt 
+Mon Nov 18 20:02:40 2024 
+Parameters
+ --- Table :script/Table_Annotations.csv
+ --- Dir : /Users/valentingoupille/Library/Mobile Documents/com~apple~CloudDocs/University/Master_Bioinfo/GNF/Sibut/TP_RNAseq/data
+ --- Pvalue : 0.01
+ --- FC : 2
+ --- Analysis Type : All
+ --- Control condition : DN
+ --- Pre-filtering : keep rows with at least  10  reads total
+ --- HTS Filtering : TRUE
+ --- Manual Filtering - Number of min counts : 
+ --- Paired analysis : FALSE
+ --- Multiple Test Correction : bonferroni
+ --- Record even no filtered DESeq2 results : FALSE
+ Unpaired analysis
+ Creation of the counts table
+ Pre-filtrage : Nombre de lignes initial :  58243
+ Pre-filtrage : Nombre de lignes conservees :  45552
+ DESeq - test global LRT
+ Filtering
+ Filtering by HTSFilter
+ DESeq analysis - Wald tests
+ No control condition needed, all comparisons performed
+ Comparison of all conditions two-by-two
+ condition_FDC_vs_DN
+ --- DESEq2 analysis retrieved 3372 genes with a padj of 0.01 of which 3239 had a fold change of at least 2
+ condition_FRC49a_vs_DN
+ --- DESEq2 analysis retrieved 1775 genes with a padj of 0.01 of which 1700 had a fold change of at least 2

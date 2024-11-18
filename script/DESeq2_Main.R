@@ -15,9 +15,14 @@
 
 # --- r�pertoire de travail
 #setwd("d:/home/drossill/bureau/ENSEIGNEMENT/2018 Formation R/MODULE 6/Module_6_TP/5_DESeq2")
-dir <- getwd()
+#dir <- getwd()
 
+#if (!require("BiocManager", quietly = TRUE))
+#   install.packages("BiocManager")
 
+#BiocManager::install("HTSFilter")
+#BiocManager::install("apeglm")
+#install.packages("gplots")
 
 ############################################################################
 #################### DESeq2 from sample files ##############################
