@@ -255,7 +255,7 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   # noter qu'avec cette transformation des variables, certains ENSG sont supprim�s car ils n'ont pas de gene_symbol
   # ce qui explique une PCA l�g�rement diff�rente (en contributions)
   
-  grch38 <- read.xlsx("grch38_ensembl94.xlsx", sheet=1)
+  grch38 <- read.xlsx("data/grch38_ensembl94.xlsx", sheet=1)
   
   
   # ---- import conditions table
