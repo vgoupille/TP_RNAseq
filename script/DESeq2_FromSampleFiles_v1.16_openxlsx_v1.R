@@ -26,7 +26,7 @@
 # initial   2017 12 19 Fabrice Chatonnet
 # modified  2018 04 18 DR
 #   -ajout moderated FC et plotMA
-#   -ajout variable 'record' = TRUE : sauvegarde des résultats DE sans filtrage
+#   -ajout variable 'record' = TRUE : sauvegarde des rï¿½sultats DE sans filtrage
 #     Attention: cette option TRUE peut creer une erreur java d'enregistrement dans fichier .xlsx
 #
 ##########################################################################################
@@ -99,7 +99,7 @@ DESeq2_DE_res = function(Exp, dds_res, pval, FC, i, j, correction, record){
   plotMA(res.lfc, main=paste(name_ij, " - with moderated FC", "\nDESeq2 (test de Wald)", sep=""))
   
   
-  # --- calcul FC linéaire
+  # --- calcul FC linï¿½aire
   # print("--- calculation of linear FC")
   res.lfc <- as.data.frame(res.lfc)
   res.lfc$FC <- 2^res.lfc$log2FoldChange
@@ -252,8 +252,8 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   #
   # contacter Vonnick ou Delphine pour utiliser une autre version d'Ensembl
   #
-  # noter qu'avec cette transformation des variables, certains ENSG sont supprimés car ils n'ont pas de gene_symbol
-  # ce qui explique une PCA légèrement différente (en contributions)
+  # noter qu'avec cette transformation des variables, certains ENSG sont supprimï¿½s car ils n'ont pas de gene_symbol
+  # ce qui explique une PCA lï¿½gï¿½rement diffï¿½rente (en contributions)
   
   grch38 <- read.xlsx("grch38_ensembl94.xlsx", sheet=1)
   
@@ -278,10 +278,10 @@ DESeq2_FromSampleFiles = function(table, dir, pval, FC, analysis=c("All", "Ctrl"
   # --- pre-filtering
   if (!is.null(PreFilt))
   {
-    cat("\n Pré-filtrage : Nombre de lignes initial : ", length(rowSums(counts(dds))))
+    cat("\n Prï¿½-filtrage : Nombre de lignes initial : ", length(rowSums(counts(dds))))
     keepPreFilt <- rowSums(counts(dds)) >= PreFilt
     dds <- dds[keepPreFilt, ]
-    cat("\n Pré-filtrage : Nombre de lignes conservées : ", length(which(keepPreFilt==TRUE)))
+    cat("\n Prï¿½-filtrage : Nombre de lignes conservï¿½es : ", length(which(keepPreFilt==TRUE)))
       
   }
   

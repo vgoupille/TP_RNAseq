@@ -4,7 +4,7 @@
 #
 # 2018 05 03 DR
 #
-# objectif : DESeq2 sur les données du Module_6_TP
+# objectif : DESeq2 sur les donnï¿½es du Module_6_TP
 #   input : counts bruts produits par featureCount.sh sur genouest
 #   output : counts, moderated FC, Pvalue, Padj dans fichier .xlsx
 #
@@ -14,8 +14,8 @@
 
 
 
-# --- répertoire de travail
-setwd("d:/home/drossill/bureau/ENSEIGNEMENT/2018 Formation R/MODULE 6/Module_6_TP/5_DESeq2")
+# --- rï¿½pertoire de travail
+#setwd("d:/home/drossill/bureau/ENSEIGNEMENT/2018 Formation R/MODULE 6/Module_6_TP/5_DESeq2")
 dir <- getwd()
 
 
@@ -26,7 +26,7 @@ dir <- getwd()
 
 
 ###### chargement des fonctions DESeq2 pour sample files
-source("DESeq2_FromSampleFiles_v1.16.R")
+source("script/DESeq2_FromSampleFiles_v1.16_openxlsx_v1.R")
 
 
 ###### creer la table des informations sur les echantillons
