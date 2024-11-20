@@ -1,0 +1,28 @@
+
+
+Global Dispersion des counts
+    - doit avoir un "banane"
+
+
+PCA 
+T019 
+TO20 problem
+
+
+Global Gene Expression 
+=> est ce que bon replicats biologiques 
+
+tous cela avant la normalisation : qq probleme 
+
+
+
+Normalized read threshold computed by HTSFilter
+
+
+Apres normalisation les groupes sont bien ensemble 
+
+Bon replicat bio 
+
+
++ les branches sont longue plus heterogéné au sein des groupes 
+
